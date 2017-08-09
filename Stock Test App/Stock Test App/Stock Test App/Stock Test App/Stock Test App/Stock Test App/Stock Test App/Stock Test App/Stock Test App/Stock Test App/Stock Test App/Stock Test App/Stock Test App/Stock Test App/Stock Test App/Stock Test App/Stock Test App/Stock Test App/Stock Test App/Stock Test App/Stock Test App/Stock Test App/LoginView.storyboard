@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UIk-Cs-QPv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Svq-zl-zbP">
+            <objects>
+                <viewController id="UIk-Cs-QPv" customClass="LoginViewController" customModule="StockTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MtT-jU-sOz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xoj-8c-Mt8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z6b-WB-vcn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StockTestApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHY-1S-hOG">
+                                <rect key="frame" x="87.5" y="65" width="200.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please login with Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACx-jJ-NfE">
+                                <rect key="frame" x="111" y="306.5" width="153.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ACx-jJ-NfE" firstAttribute="centerX" secondItem="Z6b-WB-vcn" secondAttribute="centerX" id="6bj-Yu-VMp"/>
+                            <constraint firstItem="sHY-1S-hOG" firstAttribute="centerX" secondItem="Z6b-WB-vcn" secondAttribute="centerX" id="HnO-D2-fB7"/>
+                            <constraint firstItem="sHY-1S-hOG" firstAttribute="top" secondItem="MtT-jU-sOz" secondAttribute="bottom" constant="45" id="U8z-8l-FBr"/>
+                            <constraint firstItem="ACx-jJ-NfE" firstAttribute="centerY" secondItem="Z6b-WB-vcn" secondAttribute="centerY" constant="-20" id="haw-Na-wOm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginPrompt" destination="ACx-jJ-NfE" id="K1z-ab-Nj4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s8T-qZ-noi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="108"/>
+        </scene>
+    </scenes>
+</document>
